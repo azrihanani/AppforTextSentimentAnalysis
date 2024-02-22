@@ -1,0 +1,34 @@
+from textblob import TextBlob
+import streamlit as st
+import streamlit.components.v1
+
+#create user defined function
+def displaypage():
+  st.subheader("Text Analysis Using Textblob")
+  st.text("Enter text to be analyzed")
+  userText=st.text_input('Input',placeholder='Input text here')
+  st.text(" ")
+  if st.button('Predict')
+    if(userText!=""):
+      st.componenets.v1.html("""<h3 style="color;#F08080;font family:Source Poppins,font-size:30px;margin-bottom:8px;margin-top:40px;">RESULT</h3>""",height=150)
+      getSentiment(userText)
+
+
+#Write user defined function
+
+def getSentiment(userText):
+  polarity,subj,status=getpolarity(userText)
+  if(status=="Positive"):
+    image
+
+
+def getPolarity(userText):
+tb=TextBlob(userText)
+polarity=round(tb.polarity,2)
+subj=round(tb.subjectivity,2)
+  if polarity>0:
+    return polarity,subj,"Positive"
+  elif polarity==0:
+    return polarity,subj,"Neautral"
+  else:
+    return polarity,subj,"Negative"
