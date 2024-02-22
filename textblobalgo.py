@@ -9,9 +9,9 @@ def displaypage():
   st.text("Enter text to be analyzed")
   userText=st.text_input('Input',placeholder='Input text here')
   st.text(" ")
-  if st.button('Predict')
+  if st.button('Predict'):
     if(userText!=""):
-      st.componenets.v1.html("""<h3 style="color;#F08080;font family:Source Poppins,font-size:30px;margin-bottom:8px;margin-top:40px;">RESULT</h3>""",height=150)
+      st.componenets.v1.html("""<h3 style="color:#F08080;font-family:Source Poppins,font-size:30px;margin-bottom:8px;margin-top:40px;">RESULT</h3>""",height=150)
       getSentiment(userText)
 
 
