@@ -4,4 +4,3 @@ import textblobalgo
 page=sidebarpage.show()
 if page=="TextBlob Analysis":
      textblobalgo.displayPage()
-
