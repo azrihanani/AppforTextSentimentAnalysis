@@ -13,6 +13,7 @@ def displayPage():
     if(userText!=""):
       st.componenets.v1.html("""<h3 style="color:#F08080;font-family:Source Poppins,font-size:30px;margin-bottom:8px;margin-top:40px;">RESULT</h3>""",height=150)
       getSentiment(userText)
+  print("Displaying the page from textbolbalgo module")
 
 #Write user defined function getsentiment
 def getSentiment(userText):
