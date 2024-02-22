@@ -4,7 +4,7 @@ import streamlit.components.v1 as components
 from PIP import Image
 
 #create user defined function
-def displayPage(textblobalgo):
+def displayPage():
   st.subheader("Text Analysis Using Textblob")
   st.text("Enter text to be analyzed")
   userText=st.text_input('Input',placeholder='Input text here')
