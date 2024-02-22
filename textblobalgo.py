@@ -14,9 +14,7 @@ def displayPage():
       st.componenets.v1.html("""<h3 style="color:#F08080;font-family:Source Poppins,font-size:30px;margin-bottom:8px;margin-top:40px;">RESULT</h3>""",height=150)
       getSentiment(userText)
 
-
 #Write user defined function getsentiment
-
 def getSentiment(userText):
   polarity,subj,status=getpolarity(userText)
   if(status=="Positive"):
@@ -25,7 +23,6 @@ def getSentiment(userText):
     image=Image.open('./images/negative.png')
   else:
     image=Image.open('./images/neutral.png')
-
 
 def getPolarity(userText):
 tb=TextBlob(userText)
