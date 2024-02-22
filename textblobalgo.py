@@ -24,7 +24,7 @@ def getSentiment(userText):
   elif(status=="Negative"):
     image=Image.open('./images/negative.png')
   else:
-    image=Image.open('./images/neautral.png')
+    image=Image.open('./images/neutral.png')
 
 
 def getPolarity(userText):
@@ -34,6 +34,6 @@ subj=round(tb.subjectivity,2)
   if polarity>0:
     return polarity,subj,"Positive"
   elif polarity==0:
-    return polarity,subj,"Neautral"
+    return polarity,subj,"Neutral"
   else:
     return polarity,subj,"Negative"
