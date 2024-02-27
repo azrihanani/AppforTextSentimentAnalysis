@@ -36,3 +36,5 @@ subj=round(tb.subjectivity,2)
     return polarity,subj,"Neutral"
   else:
     return polarity,subj,"Negative"
+
+display_page()
