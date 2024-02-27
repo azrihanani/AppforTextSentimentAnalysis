@@ -2,6 +2,8 @@ from textblob import TextBlob
 import streamlit as st
 import streamlit.components.v1 as components
 from PIP import Image
+import tkinter as tk
+from tkinter import font
 
 #create user defined function
 def displayPage():
@@ -11,7 +13,7 @@ def displayPage():
   st.text(" ")
   if st.button('Predict'):
     if(userText!=""):
-      st.componenets.v1.html("""<h3 style="color:#F08080;font-family:Source Poppins,font-size:30px;margin-bottom:8px;margin-top:40px;">RESULT</h3>""",height=150)
+      st.componenets.v1.html("""<h3 style="color:#02C7C7;font.Font(family="Poppins", size=30;margin-bottom:8px;margin-top:40px;">RESULT</h3>""",height=150)
       getSentiment(userText)
 
 #Write user defined function getsentiment
