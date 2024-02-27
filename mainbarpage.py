@@ -1,6 +1,6 @@
 import streamlit as st
 import sidebarpage
-import textblob
+import textblobalgthm
 page=sidebarpage.show()
 if page=="TextBlob Analysis":
      textblobalgo.displayPage()
