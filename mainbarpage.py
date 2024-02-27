@@ -3,4 +3,5 @@ import sidebarpage
 import textblob
 page=sidebarpage.show()
 if page=="TextBlob Analysis":
-     textblobalgthm.displayPage()
+     from textblobalgo import display_page
+     display_page()
